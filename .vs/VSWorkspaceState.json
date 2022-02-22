@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\assets",
+    "\\assets\\images",
+    "\\_includes",
+    "\\_layouts",
+    "\\_pages",
+    "\\_posts",
+    "\\_sass"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\_includes\\mathjax_support.html",
   "PreviewInSolutionExplorer": false
 }

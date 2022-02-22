@@ -1,29 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
     {% if page.use_math %}
     {% include mathjax_support.html %}
     {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="/" {% if page.title == "Home" %}class="active-page" {% endif %}>Home</a></li>
-            <li><a href="/about" {% if page.title == "About" %}class="active-page" {% endif %}>About</a></li>
-            <li><a href="/blog" {% if page.title == "Blog" %}class="active-page" {% endif %}>Blog</a></li>
-            <li><a href="/contact" {% if page.title == "Contact" %}class="active-page" {% endif %}>Contact</a></li>
-        </ul>
-    </nav>
-    <main class="page-content">
-        <center>
+  <body>
+      <header>
+          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+          <h2>giacomowm</h2>
+          <a href="/index">home</a>&#8193;<a href="/projects">projects</a>&#8193;<a href="/blog">blog</a>
+      </header>
+    <div class="wrapper">
+      <section>
         {{ content }}
-        <\center>
-    </main>
-    <footer>
-        Proudly made with Jekyll
-    </footer>
-</body>
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }} </a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages <br> Theme adapted from "Leap Day" <br> by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+  </body>
 </html>

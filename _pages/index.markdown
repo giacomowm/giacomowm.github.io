@@ -3,16 +3,27 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 permalink: /
-
+title: home
 layout: default
+description: giacomowm
 ---
-# Hello world!
 
-Here is some text
+## Project pages:
+
+### - [Proportional Area Radar Chart](/pa_radar/)
 
 
-Check out these other pages:
+## Recent Blog Posts:
 
-- [About](/about/)
-- [Blog](/blog/)
-- [Contact](/contact/)
+<h3>
+  {% for post in site.posts %}
+	<p><a href="{{ post.url }}" class="post-preview">{{ post.title }}</a></p>
+  {% endfor %}
+</h3>
+
+### see all: [Blog](/blog/)
+
+## [Contact](/contact/)
+
+
+
