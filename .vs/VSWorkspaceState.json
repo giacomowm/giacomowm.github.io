@@ -4,12 +4,13 @@
     "\\.github",
     "\\assets",
     "\\assets\\images",
+    "\\projects",
     "\\_includes",
     "\\_layouts",
     "\\_pages",
     "\\_posts",
     "\\_sass"
   ],
-  "SelectedNode": "\\_includes\\mathjax_support.html",
+  "SelectedNode": "\\_pages\\contact.markdown",
   "PreviewInSolutionExplorer": false
 }

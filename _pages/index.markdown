@@ -10,7 +10,7 @@ description: giacomowm
 
 ## Project pages:
 
-### - [Proportional Area Radar Chart](/pa_radar/)
+### - [Proportional Area Radar Chart](/pa_radar)
 
 
 ## Recent Blog Posts:
