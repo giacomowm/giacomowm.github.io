@@ -4,7 +4,6 @@ date:   2022-02-11 00:00:00 +0100
 tags: mytag
 use_math: true
 description: 
-permalink: pa_radar_blog
 ---
 
  {:style="text-align:center;"}
