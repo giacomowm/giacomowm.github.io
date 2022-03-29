@@ -10,7 +10,7 @@ description: 11th March
 
 # Proportional Area Radar Charts
 
-## For an explanation of the rational behind these charts please see my [blog post](/blog/proportional-area-radar-charts)
+## For an explanation of the rational behind these charts please see my [blog post](/pa_radar_blog)
 
 ## To use them (in Python) see my [GitHub repository](https://github.com/giacomowm/pa_radar)
 
